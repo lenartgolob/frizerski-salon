@@ -1,28 +1,28 @@
-# [Start Bootstrap - Business Casual](https://startbootstrap.com/template-overviews/business-casual/)
+# [Start Bootstrap - One Page Wonder](https://startbootstrap.com/template-overviews/one-page-wonder/)
 
-[Business Casual](http://startbootstrap.com/template-overviews/business-casual/) is a multipurpose website theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components.
+[One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/) is a basic one page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
 ## Preview
 
-[![Business Casual Preview](https://startbootstrap.com/assets/img/screenshots/themes/business-casual.png)](https://blackrockdigital.github.io/startbootstrap-business-casual/)
+[![One Page Wonder Preview](https://startbootstrap.com/assets/img/screenshots/themes/one-page-wonder.png)](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-business-casual/)**
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-business-casual/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-business-casual.svg)](https://www.npmjs.com/package/startbootstrap-business-casual)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-business-casual.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-business-casual)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual?type=dev)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-one-page-wonder/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-one-page-wonder.svg)](https://www.npmjs.com/package/startbootstrap-one-page-wonder)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder?type=dev)
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/business-casual/)
-* Install via npm: `npm i startbootstrap-business-casual`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-business-casual.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-business-casual)
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/one-page-wonder/)
+* Install via npm: `npm i startbootstrap-one-page-wonder`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder)
 
 ## Usage
 
@@ -46,7 +46,7 @@ You must have npm installed globally in order to use this build environment.
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-business-casual/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/business-casual/).
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/).
 
 ## About
 
@@ -65,4 +65,4 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 
 ## Copyright and License
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/gh-pages/LICENSE) license.

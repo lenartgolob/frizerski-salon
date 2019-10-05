@@ -1,7 +1,8 @@
 @mixin heading-font {
-  font-family: 'Raleway';
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
 }
 
 @mixin body-font {
-  font-family: 'Lora';
+  font-family: 'Lato';
 }
