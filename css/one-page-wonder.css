@@ -59,7 +59,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  /* background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%); */
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -157,4 +157,49 @@ header.masthead .bg-circle-4 {
 
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+
+#skarje {
+  width: 350px;
+  float: left;
+  margin-left: 125px;
+}
+
+.slika {
+  width: 700px;
+  border-radius: 50%;
+
+}
+
+
+
+hr {border-top: 1px solid #000; width:50%;}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+#contact2{
+    letter-spacing:3px;
+}
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+.platnica {
+  background-image: url(namizje1.jpg);
+  height: 880px;
+
+}
+
+
+.platnica img {
+  visibility: hidden; 
+  width: 100%;
 }

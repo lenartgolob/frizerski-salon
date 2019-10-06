@@ -1,0 +1,48 @@
+#platnica {
+    background-image: url(namizje1.jpg);
+    height: 880px;
+
+}
+
+
+#platnica img {
+    /* visibility: hidden;  */
+    width: 100%;
+}
+
+.btm{
+    border: 1px solid black;
+    width: 200px;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: black;
+    -webkit-text-stroke-width: thin;
+
+    
+  }
+  
+  .btm.b71:hover{
+    -webkit-text-stroke-width: thin;
+    -webkit-animation: b71  5s infinite;
+    -moz-animation: b71  5s infinite;
+    animation: b71  5s infinite;
+  }
+  
+  @-webkit-keyframes b71 {
+    0%   {background-color: #61C9A8;color: #262730;}
+  50%  {background-color: #262730;color:#61C9A8;}
+  100% {background-color: #61C9A8;color: #262730;}
+  }
+  @-moz-keyframes b71 {
+    0%   {background-color: #61C9A8;color: #262730;}
+    50%  {background-color: #262730;color:#61C9A8;}
+    100% {background-color: #61C9A8;color: #262730;}
+  }
+  @keyframes b71 {
+    0%   {background-color: #61C9A8;color: #262730;}
+    50%  {background-color: #262730;color:#61C9A8;}
+    100% {background-color: #61C9A8;color: #262730;}
+  }
