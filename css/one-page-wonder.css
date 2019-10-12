@@ -203,3 +203,7 @@ a:link{text-decoration:none;}
   visibility: hidden; 
   width: 100%;
 }
+
+.logo {
+  height: 75px;
+}

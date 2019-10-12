@@ -65,12 +65,17 @@
           <input type="password" name="pass" id="pass">
           <span class="spin"></span>
        </div>
- 
+
+       <br>
+       <div class="pass-forgot">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Remember me</label>
+       </div>
+
        <div class="button login">
           <button onclick="login()"><span>GO</span> <i class="fa fa-check"></i></button>
        </div>
  
-       <a href="" class="pass-forgot">Forgot your password?</a>
  
     </div>
  
@@ -245,10 +250,24 @@ $(".material-button").click(function() {
 });
 
 function login(){
-    var delayInMilliseconds = 500; // delay 0,5 sekunde
-    setTimeout(function() {
-        window.open("namizje.html", "index");
-    }, delayInMilliseconds);
+   var username = document.getElementById("name").value;
+   var password = document.getElementById("pass").value;
+
+
+
+   if(username == "username" && password == "password"){
+      
+      var delayInMilliseconds = 500; // delay 0,5 sekunde
+      setTimeout(function() {
+      window.open("namizje.html", "index");
+   }, delayInMilliseconds);
+
+   }
+
+   else {
+      window.open("login.html?msg=wrong_pass");
+   }
+
 
     
 }

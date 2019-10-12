@@ -249,9 +249,13 @@
  .pass-forgot {
     width: 100%;
     float: left;
-    text-align: center;
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 21px;
+    font-size: 15px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.4);
-    font-size: 18px;
+    
  }
  
  .click-efect {
