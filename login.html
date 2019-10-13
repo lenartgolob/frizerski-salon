@@ -12,6 +12,10 @@
 
   <link rel="stylesheet" type="text/css" href="css/login.css">
 
+  <!-- Sweetalerts -->
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -249,26 +253,55 @@ $(".material-button").click(function() {
 
 });
 
+
+
+
+
 function login(){
+
    var username = document.getElementById("name").value;
    var password = document.getElementById("pass").value;
 
-
-
    if(username == "username" && password == "password"){
-      
       var delayInMilliseconds = 500; // delay 0,5 sekunde
       setTimeout(function() {
-      window.open("namizje.html", "index");
+      window.location = "namizje.html";
    }, delayInMilliseconds);
 
    }
 
    else {
-      window.open("login.html?msg=wrong_pass");
+      window.location = "login.html?msg=wrong_pass";
+
    }
 
 
     
 }
+
+
+   const urlParams = new URLSearchParams(window.location.search);
+   const myParam = urlParams.get('myParam');
+
+   function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+   var msg = getParameterByName('msg'); 
+   console.log(msg);
+
+
+   if(msg == "wrong_pass"){
+      Swal.fire({
+      type: 'error',
+      title: 'Napaka...',
+      text: 'Napačno geslo ali uporabniško ime',
+})
+
+   }
 </script>
