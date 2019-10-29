@@ -25,6 +25,9 @@
   <!-- Custom styles for this template -->
   <link href="css/one-page-wonder.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+
+
 </head>
 
 <body>
@@ -57,13 +60,36 @@
           <div class="container">
             <h1 class="masthead-heading mb-0">Le Salon</h1>
             <h2 class="masthead-subheading mb-0">Frizerski studio</h2>
-            <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Rezerviraj termin</a>
+            <a href="login.html" class="btn btn-primary btn-xl rounded-pill mt-5">Postani član</a>
           </div>
         </div>
       <img src="img/namizje1.jpg" alt="platnica" />
   </header>
 
+<div id="about">
+    <h1 class="text-center">O nas</h1>
+  <div id="text" class="text-justify">
+      <br>
+      <p>Le Salon je veriga frizerskih salonov, ki je od leta 2001 s svojimi kvalitetnimi uslugami uspela pridobiti širok krog zadovoljnih strank, tako na domačem trgu, kot v tujini. 
+        Upravičeno smo lahko ponosni na nekaj več kot 30 salonov na območju celotne Slovenije in še enkrat toliko salonov v tujini.</p>
+      <p>Glede na današnji tempo življenja, si pozicioniranje salonov v nakupovalnih centrih štejemo v prid, saj stranke z obiskom naših salonov prihranijo čas in denar. 
+        Brez utrujajočih čakalnih vrst lahko stranke dobijo hitre in cenovno ugodne, a kvalitetne storitve z opaznimi spremembami.</p>
+      <p>Striženje je osnovano v skladu z modnimi smernicami za enostavnejše vzdrževanje pričeske tudi ob domači negi, medtem ko različne tehnike barvanja dopolnjujejo celostno podobo.
+      </p>
+      <p>Mlade ekipe zaposlenih v SIMPLE salonih so polne energije ter svežih idej, s katerimi vas željno pričakujejo. Svoje znanje redno nadgrajujejo na strokovnih seminarjih in so 
+        vedno v koraku z novimi modnimi smernicami. Redno smo prisotni tudi na različnih modnih dogajanjih kot so modne revije, predstavitve, snemanja, seminarji …</p>
+      <p>Urejeni lasje so prav gotovo ena izmed tistih stvari, katera se dotakne vsakega posameznika zato je naša filozofija: KVALITETNA STORITEV ZA DOSTOPNO CENO!</p>
+      <p>V frizerskih salonih SIMPLE se bomo trudili, da s hitrimi, a učinkovitimi uslugami po pristriženih cenah na trgu dosežemo še večjo prepoznavnost in priljubljenost.</p>
+    </div>
+  </div>
+</div>
+  <div class="text-center imgcontainer">
+  <img src="img/parallax.jpg" class="imgpx" alt="photo">
+  </div>
 
+
+  <h1 class="text-center">Storitve</h1>
+  <br>
   <section>
     <div class="container">
       <div class="row align-items-center">
@@ -119,7 +145,7 @@
   </section>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-<br><br><br><br>
+<br><br><br><br><br><br>
   <div class="container">
   <h1 class="text-center">Kontakt</h1>
   <hr>
@@ -160,8 +186,9 @@
 
 </html>
 <script>
-var image = document.getElementsByClassName('platnica');
+var image = document.getElementsByClassName('imgpx');
 new simpleParallax(image, {
-	orientation: 'right'
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
 });
 </script>

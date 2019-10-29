@@ -207,3 +207,29 @@ a:link{text-decoration:none;}
 .logo {
   height: 75px;
 }
+
+#text {
+  width: 65%;
+  margin: 0 auto;
+
+}
+
+#about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.imgpx {
+  width: 100%;
+
+}
+
+.imgcontainer {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+p {
+  font-size: 115%;
+}
