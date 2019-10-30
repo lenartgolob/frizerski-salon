@@ -208,10 +208,10 @@ a:link{text-decoration:none;}
   height: 75px;
 }
 
-#text {
+.text {
   width: 65%;
   margin: 0 auto;
-
+  justify-content: center;
 }
 
 #about {
@@ -233,3 +233,8 @@ a:link{text-decoration:none;}
 p {
   font-size: 115%;
 }
+
+.my-form {
+  margin-top: 200px;
+}
+
