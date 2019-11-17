@@ -12,9 +12,10 @@
 
   <link rel="stylesheet" type="text/css" href="css/login.css">
 
-  <!-- Sweetalerts -->
+  <!-- Sweetalerts, ANIME:JS -->
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="css/one-page-wonder.css" rel="stylesheet">
 
 </head>
 
@@ -33,20 +34,17 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Le Salon</a>
+      <a class="navbar-brand" href="index.html">
+         <h1 class="ml11">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters">Le Salon</span>
+            </span>
+          </h1>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="register.html">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Log In</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </nav>
   <br><br><br><br>
@@ -262,9 +260,10 @@ function login(){
    var username = document.getElementById("name").value;
    var password = document.getElementById("pass").value;
 
-   if(username == "username" && password == "password"){
+   if(username == "Lenart" && password == "password"){
       var delayInMilliseconds = 500; // delay 0,5 sekunde
       setTimeout(function() {
+      localStorage.setItem("username", username);
       window.location = "namizje.html";
    }, delayInMilliseconds);
 
@@ -304,4 +303,38 @@ function login(){
 })
 
    }
+
+
+   // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 </script>
