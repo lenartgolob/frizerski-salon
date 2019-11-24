@@ -14,6 +14,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.8.2/dist/mailgo.min.js" defer></script>
+  
   
 
   <!-- Bootstrap core CSS -->
@@ -27,7 +29,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/one-page-wonder.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 
 
@@ -39,12 +40,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <h1 class="ml11">
-          <span class="text-wrapper">
-            <span class="line line1"></span>
-            <span class="letters">Le Salon</span>
-          </span>
-        </h1>
+        <img id="logo" src="img/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +51,7 @@
             <a class="nav-link" href="login.html">Naroči se!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galerija</a>
+            <a class="nav-link" href="login.html">Galerija</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Log In</a>
@@ -65,10 +61,19 @@
     </div>
   </nav>
 
+
+
   <header class="platnica masthead text-center text-white">
       <div class="masthead-content">
           <div class="container">
-            <h1 class="masthead-heading mb-0">Le Salon</h1>
+            <h1 class="masthead-heading mb-0">
+                <h1 class="ml11">
+                    <span class="text-wrapper">
+                      <span class="line line1"></span>
+                      <span class="letters">Le Salon</span>
+                    </span>
+                  </h1>
+            </h1>
             <h2 class="masthead-subheading mb-0">Frizerski studio</h2>
             <a href="login.html" class="btn btn-primary btn-xl rounded-pill mt-5">Postani član</a>
           </div>
@@ -80,16 +85,18 @@
     <h1 class="text-center">O nas</h1>
   <div class="text" class="text-justify">
       <br>
-      <p>Le Salon je veriga frizerskih salonov, ki je od leta 2001 s svojimi kvalitetnimi uslugami uspela pridobiti širok krog zadovoljnih strank, tako na domačem trgu, kot v tujini. 
+      <p class="text-justify">Le Salon je veriga frizerskih salonov, ki je od leta 2001 s svojimi kvalitetnimi uslugami uspela pridobiti širok krog zadovoljnih strank, tako na domačem trgu, kot v tujini. 
         Upravičeno smo lahko ponosni na nekaj več kot 30 salonov na območju celotne Slovenije in še enkrat toliko salonov v tujini.</p>
-      <p>Glede na današnji tempo življenja, si pozicioniranje salonov v nakupovalnih centrih štejemo v prid, saj stranke z obiskom naših salonov prihranijo čas in denar. 
+      <p class="text-justify">Glede na današnji tempo življenja, si pozicioniranje salonov v nakupovalnih centrih štejemo v prid, saj stranke z obiskom naših salonov prihranijo čas in denar. 
         Brez utrujajočih čakalnih vrst lahko stranke dobijo hitre in cenovno ugodne, a kvalitetne storitve z opaznimi spremembami.</p>
-      <p>Striženje je osnovano v skladu z modnimi smernicami za enostavnejše vzdrževanje pričeske tudi ob domači negi, medtem ko različne tehnike barvanja dopolnjujejo celostno podobo.
+      <p class="text-justify">Striženje je osnovano v skladu z modnimi smernicami za enostavnejše vzdrževanje pričeske tudi ob domači negi, medtem ko različne tehnike barvanja dopolnjujejo celostno podobo.
       </p>
-      <p>Mlade ekipe zaposlenih v SIMPLE salonih so polne energije ter svežih idej, s katerimi vas željno pričakujejo. Svoje znanje redno nadgrajujejo na strokovnih seminarjih in so 
+      <p class="text-justify">Mlade ekipe zaposlenih v SIMPLE salonih so polne energije ter svežih idej, s katerimi vas željno pričakujejo. Svoje znanje redno nadgrajujejo na strokovnih seminarjih in so 
         vedno v koraku z novimi modnimi smernicami. Redno smo prisotni tudi na različnih modnih dogajanjih kot so modne revije, predstavitve, snemanja, seminarji …</p>
-      <p>Urejeni lasje so prav gotovo ena izmed tistih stvari, katera se dotakne vsakega posameznika zato je naša filozofija: KVALITETNA STORITEV ZA DOSTOPNO CENO!</p>
-      <p>V frizerskih salonih SIMPLE se bomo trudili, da s hitrimi, a učinkovitimi uslugami po pristriženih cenah na trgu dosežemo še večjo prepoznavnost in priljubljenost.</p>
+      <p class="text-justify">Urejeni lasje so prav gotovo ena izmed tistih stvari, katera se dotakne vsakega posameznika zato je naša filozofija: KVALITETNA STORITEV ZA DOSTOPNO CENO!
+         V frizerskih salonih SIMPLE se bomo trudili, da s hitrimi, a učinkovitimi uslugami po pristriženih cenah na trgu dosežemo še večjo prepoznavnost in priljubljenost.
+      </p>
+      
     </div>
   </div>
 </div>
@@ -111,7 +118,7 @@
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">Žensko striženje</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
       </div>
@@ -129,7 +136,7 @@
         <div class="col-lg-6">
           <div class="p-5">
             <h2 class="display-4">Moško striženje</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
       </div>
@@ -147,7 +154,7 @@
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">Moško britje</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
           </div>
         </div>
       </div>
@@ -159,6 +166,7 @@
   <div class="container">
   <h1 class="text-center">Kontakt</h1>
   <hr>
+  <br>
     <div class="row">
       <div class="col-sm-8">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.190858975957!2d15.085515515587879!3d46.365601179121875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476567357f1dede1%3A0x2e20932172f37c9c!2sUlica%20Janka%20Ulriha%2044%2C%203320%20Velenje!5e0!3m2!1ssl!2ssi!4v1570366440315!5m2!1ssl!2ssi" width="100%" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -166,19 +174,19 @@
   
       <div class="col-sm-4" id="contact2">
           <h3>Le Salon</h3>
-          <hr align="left" width="50%">
+          <hr class="hr-align" width="50%">
           <h4 class="pt-2">Naslov:</h4>
           <i class="fas fa-globe" style="color:#000"></i>Ulica Janka Ulriha 44<br>
           <h4 class="pt-2">Telefon:</h4>
-          <i class="fas fa-phone" style="color:#000"></i> <a href="tel:+"> 070-744-153 </a><br>
-          <i class="fab fa-whatsapp" style="color:#000"></i><a href="tel:+"> +38670744153 </a><br>
+          <i class="fas fa-phone" style="color:#000"></i> <a href="tel:070744153">070-744-153</a><br>
+          <i class="fab fa-whatsapp" style="color:#000"></i><a href="tel:0038670744153">+386 70 744 153</a><br>
           <h4 class="pt-2">Email</h4>
-          <i class="fa fa-envelope" style="color:#000"></i> <a href="">le-salon@gmail.com</a><br>
+          <i class="fa fa-envelope" style="color:#000"></i> <a href="mailto:le-salon@gmail.com">le-salon@gmail.com</a><br>
         </div>
     </div>
   </div>
   
-<br><br><br>
+<br><br><br><br><br>
    
   <!-- Footer -->
   <footer class="py-5 bg-black">
@@ -188,50 +196,11 @@
     <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
-<script>
-var image = document.getElementsByClassName('imgpx');
-new simpleParallax(image, {
-	delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)'
-});
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml11 .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: (el, i) => 34 * (i+1)
-  }).add({
-    targets: '.ml11',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-</script>
+<!-- JS custom code -->
+<script src="js/simpleParallax.js"></script>
+<script src="js/anime.js"></script>

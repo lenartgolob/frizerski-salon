@@ -241,8 +241,8 @@ p {
 /* ANIME.JS */
 
 .ml11 {
-  font-weight: 100;
-  font-size: 1.5em;
+  font-weight: 200;
+  font-size: 5.5em;
 }
 
 .ml11 .text-wrapper {
@@ -273,3 +273,15 @@ p {
   line-height: 1em;
 }
 
+#logo {
+  width: 175px;
+}
+
+.kontejner {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.hr-align {
+  margin-left: 0;
+}

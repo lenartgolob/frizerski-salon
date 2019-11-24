@@ -12,10 +12,11 @@
 
   <link rel="stylesheet" type="text/css" href="css/login.css">
 
-  <!-- Sweetalerts, ANIME:JS -->
+  <!-- JS libraries -->
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,24 +30,22 @@
 
 </head>
 
-<body>
+<body data-barba="wrapper">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-         <h1 class="ml11">
-            <span class="text-wrapper">
-              <span class="line line1"></span>
-              <span class="letters">Le Salon</span>
-            </span>
-          </h1>
+      <a class="navbar-brand" href="indeks.html">
+            <img id="logo" src="img/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
   </nav>
+
+  <main data-barba="container" data-barba-namespace="home">
+
   <br><br><br><br>
 
   <div class="materialContainer">
@@ -113,7 +112,7 @@
  
  </div>
 
- 
+</main>
 
   <!-- Footer -->
   <footer class="py-5 bg-black">
@@ -130,211 +129,9 @@
 </body>
 
 </html>
-<script>
-$(function() {
 
-$(".input input").focus(function() {
+<!-- JS custom code -->
+<script src="js/login.js"></script>
+<script src="js/loginCheck.js"></script>
+<script src="js/loginSweetAlert.js"></script>
 
-   $(this).parent(".input").each(function() {
-      $("label", this).css({
-         "line-height": "18px",
-         "font-size": "18px",
-         "font-weight": "100",
-         "top": "0px"
-      })
-      $(".spin", this).css({
-         "width": "100%"
-      })
-   });
-}).blur(function() {
-   $(".spin").css({
-      "width": "0px"
-   })
-   if ($(this).val() == "") {
-      $(this).parent(".input").each(function() {
-         $("label", this).css({
-            "line-height": "60px",
-            "font-size": "24px",
-            "font-weight": "300",
-            "top": "10px"
-         })
-      });
-
-   }
-});
-
-$(".button").click(function(e) {
-   var pX = e.pageX,
-      pY = e.pageY,
-      oX = parseInt($(this).offset().left),
-      oY = parseInt($(this).offset().top);
-
-   $(this).append('<span class="click-efect x-' + oX + ' y-' + oY + '" style="margin-left:' + (pX - oX) + 'px;margin-top:' + (pY - oY) + 'px;"></span>')
-   $('.x-' + oX + '.y-' + oY + '').animate({
-      "width": "500px",
-      "height": "500px",
-      "top": "-250px",
-      "left": "-250px",
-
-   }, 600);
-   $("button", this).addClass('active');
-})
-
-$(".alt-2").click(function() {
-   if (!$(this).hasClass('material-button')) {
-      $(".shape").css({
-         "width": "100%",
-         "height": "100%",
-         "transform": "rotate(0deg)"
-      })
-
-      setTimeout(function() {
-         $(".overbox").css({
-            "overflow": "initial"
-         })
-      }, 600)
-
-      $(this).animate({
-         "width": "140px",
-         "height": "140px"
-      }, 500, function() {
-         $(".box").removeClass("back");
-
-         $(this).removeClass('active')
-      });
-
-      $(".overbox .title").fadeOut(300);
-      $(".overbox .input").fadeOut(300);
-      $(".overbox .button").fadeOut(300);
-
-      $(".alt-2").addClass('material-buton');
-   }
-
-})
-
-$(".material-button").click(function() {
-
-   if ($(this).hasClass('material-button')) {
-      setTimeout(function() {
-         $(".overbox").css({
-            "overflow": "hidden"
-         })
-         $(".box").addClass("back");
-      }, 200)
-      $(this).addClass('active').animate({
-         "width": "700px",
-         "height": "700px"
-      });
-
-      setTimeout(function() {
-         $(".shape").css({
-            "width": "50%",
-            "height": "50%",
-            "transform": "rotate(45deg)"
-         })
-
-         $(".overbox .title").fadeIn(300);
-         $(".overbox .input").fadeIn(300);
-         $(".overbox .button").fadeIn(300);
-      }, 700)
-
-      $(this).removeClass('material-button');
-
-   }
-
-   if ($(".alt-2").hasClass('material-buton')) {
-      $(".alt-2").removeClass('material-buton');
-      $(".alt-2").addClass('material-button');
-   }
-
-});
-
-});
-
-
-
-
-
-function login(){
-
-   var username = document.getElementById("name").value;
-   var password = document.getElementById("pass").value;
-
-   if(username == "Lenart" && password == "password"){
-      var delayInMilliseconds = 500; // delay 0,5 sekunde
-      setTimeout(function() {
-      localStorage.setItem("username", username);
-      window.location = "namizje.html";
-   }, delayInMilliseconds);
-
-   }
-
-   else {
-      window.location = "login.html?msg=wrong_pass";
-
-   }
-
-
-    
-}
-
-
-   const urlParams = new URLSearchParams(window.location.search);
-   const myParam = urlParams.get('myParam');
-
-   function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-   var msg = getParameterByName('msg'); 
-   console.log(msg);
-
-
-   if(msg == "wrong_pass"){
-      Swal.fire({
-      type: 'error',
-      title: 'Napaka...',
-      text: 'Napačno geslo ali uporabniško ime',
-})
-
-   }
-
-
-   // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml11 .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: (el, i) => 34 * (i+1)
-  }).add({
-    targets: '.ml11',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-</script>

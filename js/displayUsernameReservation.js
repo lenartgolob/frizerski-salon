@@ -1,0 +1,1 @@
+document.getElementById("reserve").innerHTML = "Rezerviraj termin - " + localStorage.getItem("username");
